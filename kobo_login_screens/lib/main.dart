@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kobo_login_screens/screens/easy_peasy.dart';
 import 'package:kobo_login_screens/screens/laughing_emoji.dart';
 import 'package:kobo_login_screens/screens/twitch.dart';
+import 'package:kobo_login_screens/screens/voluntary_login.dart';
 
 void main() => runApp(const MyApp());
 
@@ -12,11 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: LaughingEmoji.id,
+      initialRoute: VoluntaryLogin.id,
       routes: {
         EasyPeasy.id: (context) => EasyPeasy(),
         Twitch.id: (context) => Twitch(),
         LaughingEmoji.id: (context) => LaughingEmoji(),
+        VoluntaryLogin.id: (context) => VoluntaryLogin(),
       },
     );
   }
