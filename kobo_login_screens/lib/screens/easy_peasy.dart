@@ -76,6 +76,7 @@ class _EasyPeasyState extends State<EasyPeasy> {
                     'Continue',
                     style: TextStyle(
                       color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
@@ -105,6 +106,7 @@ class _EasyPeasyState extends State<EasyPeasy> {
                     'Continue with Facebook',
                     style: TextStyle(
                       color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
