@@ -14,6 +14,7 @@ class _SomethingFunkyState extends State<SomethingFunky> {
     return Scaffold(
       backgroundColor: Color(0xFF283363),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Stack(
@@ -117,7 +118,17 @@ class _SomethingFunkyState extends State<SomethingFunky> {
                 ),
               ],
             ),
-          )
+          ),
+
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Image.asset('images/row_item1.png'),
+                // Image.asset('images/row_item2.png'),
+              ],
+            ),
+          ),
         ],
       ),
     );

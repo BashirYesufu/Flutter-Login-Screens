@@ -54,10 +54,13 @@ class _TwitchState extends State<Twitch> {
               padding: const EdgeInsets.only(top: 30.0),
               child: TextField(
                 decoration: InputDecoration(
-                  suffixIcon: Text(
-                    'Forgot?',
-                    style: TextStyle(
+                  suffixIcon: TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Forgot?',
+                      style: TextStyle(
                         color: Color(0xFF2C6EFF),
+                      ),
                     ),
                   ),
                   hintText: 'Password',
@@ -89,11 +92,16 @@ class _TwitchState extends State<Twitch> {
             ),
 
             Center(
-              child: Text(
-                'REGISTER NOW',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
+              child: TextButton(
+                onPressed: () {  },
+                child: Text(
+                  'REGISTER NOW',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
                 ),
+
               ),
             ),
           ],
