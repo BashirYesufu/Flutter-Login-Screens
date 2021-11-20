@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kobo_login_screens/screens/easy_peasy.dart';
 import 'package:kobo_login_screens/screens/goliath_bank.dart';
 import 'package:kobo_login_screens/screens/laughing_emoji.dart';
+import 'package:kobo_login_screens/screens/something_funky.dart';
 import 'package:kobo_login_screens/screens/twitch.dart';
 import 'package:kobo_login_screens/screens/voluntary_login.dart';
 
@@ -15,13 +16,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: GoliathBank.id,
+      initialRoute: SomethingFunky.id,
       routes: {
         EasyPeasy.id: (context) => EasyPeasy(),
         Twitch.id: (context) => Twitch(),
         LaughingEmoji.id: (context) => LaughingEmoji(),
         VoluntaryLogin.id: (context) => VoluntaryLogin(),
         GoliathBank.id: (context) => GoliathBank(),
+        SomethingFunky.id: (context) => SomethingFunky(),
       },
     );
   }
