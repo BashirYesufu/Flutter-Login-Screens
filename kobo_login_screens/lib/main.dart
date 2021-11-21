@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: Uber.id,
+      initialRoute: Parallel.id,
       routes: {
         EasyPeasy.id: (context) => EasyPeasy(),
         Twitch.id: (context) => Twitch(),

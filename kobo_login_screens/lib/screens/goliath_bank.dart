@@ -59,7 +59,6 @@ class _GoliathBankState extends State<GoliathBank> {
                 prefixIcon: Icon(Icons.email),
                 hintStyle: TextStyle(
                   fontSize: 14,
-                  fontFamily: 'IBMPlexSans',
                 ),
               ),
             ),

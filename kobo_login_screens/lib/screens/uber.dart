@@ -16,24 +16,88 @@ class _UberState extends State<Uber> {
         width: double.infinity,
         margin: EdgeInsets.all(0.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Stack(
-              alignment: AlignmentDirectional.center,
-              children: [
-                Image.asset('images/uber_image.png'),
-                Image.asset('images/uber_logo.png')
-              ],
+            Container(
+              color: Color(0xFF1D1930),
+              child: Stack(
+                alignment: AlignmentDirectional.center,
+                children: [
+                  Image.asset('images/uber_image.png'),
+                  Image.asset('images/uber_logo.png')
+                ],
+              ),
             ),
 
             SizedBox(
               height: 40.0,
             ),
-            Column(
-              children: [
-                Text('Login'),
-              ],
+            Container(
+              padding: EdgeInsets.all(30.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Login',
+                    style: TextStyle(
+                        fontSize: 30.0,
+                        fontWeight: FontWeight.bold
+                    ),
+                  ),
+                  SizedBox(height: 10.0,),
+                  Text(
+                    'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor',
+                    style: TextStyle(
+                        fontSize: 12.0,
+                        fontWeight: FontWeight.normal
+                    ),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.person_outline),
+                      focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide.none
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide.none
+                      ),
+                      hintText: 'Username',
+                    ),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.lock),
+                      focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide.none
+                      ),
+                      enabledBorder: OutlineInputBorder(
+                          borderSide: BorderSide.none
+                      ),
+                      hintText: 'Password',
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      TextButton(onPressed: () {}, child: Text('Forgot Password?'))
+                    ],
+                  ),
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      TextButton(
+                          onPressed: () {},
+                          child: Text('Sign Up'),
+                      ),
+                      TextButton(
+                        onPressed: () {},
+                        child: Text('Sign In'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             )
           ],
         ),
