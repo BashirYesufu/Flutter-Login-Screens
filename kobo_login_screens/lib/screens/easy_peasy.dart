@@ -47,6 +47,8 @@ class _EasyPeasyState extends State<EasyPeasy> {
 
             TextField(
               decoration: InputDecoration(
+                //filled: true,
+                fillColor: Colors.grey,
                 suffixIcon: Icon(Icons.close, color: Color(0xFF5D5655)),
                 contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 border: OutlineInputBorder(

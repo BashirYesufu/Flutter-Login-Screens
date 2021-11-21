@@ -44,9 +44,42 @@ class _GoliathBankState extends State<GoliathBank> {
               ),
             ),
 
-            TextField(),
+            SizedBox(height: 70.0,),
 
-            TextField(),
+            TextFormField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(5.0),
+                    topRight: Radius.circular(5.0),
+                  ),
+                  borderSide: BorderSide(),
+                ),
+                hintText: 'Email Address',
+                prefixIcon: Icon(Icons.email),
+                hintStyle: TextStyle(
+                  fontSize: 14,
+                  fontFamily: 'IBMPlexSans',
+                ),
+              ),
+            ),
+            TextFormField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(5.0),
+                    bottomRight: Radius.circular(5.0),
+                  ),
+                  borderSide: BorderSide(),
+                ),
+                hintText: 'Password',
+                prefixIcon: Icon(Icons.lock_outline),
+                hintStyle: TextStyle(
+                  fontSize: 14,
+                  fontFamily: 'IBMPlexSans',
+                ),
+              ),
+            ),
 
             TextButton(
               onPressed: () {},
@@ -79,7 +112,7 @@ class _GoliathBankState extends State<GoliathBank> {
               ),
             ),
 
-            SizedBox(height: 200.0,),
+            SizedBox(height: 70.0,),
 
             Center(
               child: Column(
@@ -88,7 +121,7 @@ class _GoliathBankState extends State<GoliathBank> {
                   TextButton(
                     onPressed: () {},
                     child: Text(
-                      'Forgot Password?',
+                      'Sign Up Here',
                       style: TextStyle(
                         color: Color(0xFF004AFF),
                         fontWeight: FontWeight.bold,
